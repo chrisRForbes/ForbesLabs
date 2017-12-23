@@ -479,5 +479,44 @@
         "GK": {
             "connections": [ "LCB", "RCB" ]
         }
-    }
+    },
+    "4321": {
+        "ST": {
+            "connections": [ "LF", "RF" ]
+        },
+        "LF": {
+            "connections": [ "ST", "LCM", "CM" ]
+        },
+        "RF": {
+            "connections": [ "ST", "RCM", "CM" ]
+        },
+        "LCM": {
+            "connections": [ "LF", "CM", "LB", "LCB" ],
+            "position": "CM"
+        },
+        "CM": {
+            "connections": [ "LF", "RF", "LCM", "RCM" ]
+        },
+        "RCM": {
+            "connections": [ "RF", "CM", "RB", "RCB" ],
+            "position": "CM"
+        },
+        "LB": {
+            "connections": [ "LCM", "LCB" ]
+        },
+        "LCB": {
+            "connections": [ "LCM", "CM", "LB", "RCB", "GK" ],
+            "position": "CB"
+        },
+        "RCB": {
+            "connections": [ "RCM", "CM", "RB", "LCB", "GK" ],
+            "position": "CB"
+        },
+        "RB": {
+            "connections": [ "RCM", "RCB" ]
+        },
+        "GK": {
+            "connections": [ "LCB", "RCB" ]
+        }
+    },
 }
