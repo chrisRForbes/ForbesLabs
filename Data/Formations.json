@@ -396,7 +396,88 @@
             "connections": [ "LCB", "RCB" ]
         }
     },
-    "4222": { 
-        
+    "4222": {
+        "LST": {
+            "connections": [ "LCAM", "LCDM", "RST" ],
+            "position": "ST"
+        },
+        "RST": {
+            "connections": [ "RCAM", "RCDM", "LST" ],
+            "position": "ST"
+        },
+        "LCAM": {
+            "connections": [ "LST", "LCDM", "LB" ],
+            "position": "CAM"
+        },
+        "RCAM": {
+            "connections": [ "RST", "RCDM", "RB" ],
+            "position": "CAM"
+        },
+        "LCDM": {
+            "connections": [ "LST", "LCAM", "LCB", "RCDM" ],
+            "position": "CDM"
+        },
+        "RCDM": {
+            "connections": [ "RST", "RCAM", "RCB", "LCDM" ],
+            "position": "CDM"
+        },
+        "LB": {
+            "connections": [ "LCAM", "LCB" ]
+        },
+        "LCB": {
+            "connections": [ "LCDM", "LB", "RCB", "GK" ],
+            "position": "CB"
+        },
+        "RCB": {
+            "connections": [ "RCDM", "RB", "LCB", "GK" ],
+            "position": "CB"
+        },
+        "RB": {
+            "connections": [ "RCAM", "RCB" ]
+        },
+        "GK": {
+            "connections": [ "LCB", "RCB" ]
+        }
+    },
+    "4312": {
+        "LST": {
+            "connections": [ "LCM", "CAM", "RST" ],
+            "position": "ST"
+        },
+        "RST": {
+            "connections": [ "RCM", "CAM", "LST" ],
+            "position": "ST"
+        },
+        "CAM": {
+            "connections": [ "LST", "RST", "CM" ]
+        },
+        "LCM": {
+            "connections": [ "LST", "LB", "LCB", "CM" ],
+            "position": "CM"
+        },
+        "RCM": {
+            "connections": [ "RST", "RB", "RCB", "CM" ],
+            "position": "CM"
+        },
+        "CM": {
+            "connections": [ "CAM", "LCM", "RCM", "LCB", "RCB" ]
+        },
+        "LB": {
+            "connections": [ "LCM", "LCB" ]
+        },
+        "LCB": {
+            "connections": [ "LCM", "CM", "LB", "RCB", "GK" ],
+            "position": "CB"
+        },
+        "RCB": {
+            "connections": [ "RCM", "CM", "RB", "LCB", "GK" ],
+            "position": "CB"
+        },
+        "RB": {
+            "connections": [ "RCM", "RCB" ]
+        },
+        "GK": {
+            "connections": [ "LCB", "RCB" ]
+        }
     }
 }
