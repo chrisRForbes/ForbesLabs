@@ -1,0 +1,402 @@
+{
+    "433": {
+        "LW": {
+            "connections": [ "ST", "LCM" ]
+        },
+        "ST": {
+            "connections": [ "LW", "CM", "RW" ]
+        },
+        "RW": {
+            "connections": [ "ST", "RCM" ]
+        },
+        "LCM": {
+            "connections": [ "LW", "CM", "LB" ],
+            "position": "CM"
+        },
+        "CM": {
+            "connections": [ "LCM", "ST", "LCB", "RCB", "RCM" ]
+        },
+        "RCM": {
+            "connections": [ "RW", "CM", "RB" ]
+        },
+        "LB": {
+            "connections": [ "LCM", "LCB" ]
+        },
+        "LCB": {
+            "connections": [ "LB", "CM", "RCB", "GK" ],
+            "position": "CB"
+        },
+        "RCB": {
+            "connections": [ "RB", "CM", "LCB", "GK" ],
+            "position": "CB"
+        },
+        "RB": {
+            "connections": [ "RCM", "RCB" ]
+        },
+        "GK": {
+            "connections": [ "RCB", "LCB" ]
+        }
+    },
+    "3412": {
+        "LST": {
+            "connections": [ "LM", "CAM", "RST" ],
+            "position": "ST"
+        },
+        "RST": {
+            "connections": [ "RM", "CAM", "LST" ],
+            "position": "ST"
+        },
+        "CAM": {
+            "connections": [ "LST", "LCM", "RST", "RCM" ]
+        },
+        "LM": {
+            "connections": [ "LST", "LCM", "LCB" ]
+        },
+        "LCM": {
+            "connections": [ "LM", "CAM", "RCM", "CB" ],
+            "position": "CM"
+        },
+        "RCM": {
+            "connections": [ "RM", "CAM", "LCM", "CB" ],
+            "position": "CM"
+        },
+        "RM": {
+            "connections": [ "RST", "RCM", "RCB" ]
+        },
+        "LCB": {
+            "connections": [ "LM", "CB", "GK" ],
+            "position": "CB"
+        },
+        "CB": {
+            "connections": [ "LCB", "LCM", "RCM", "RCB", "GK" ]
+        },
+        "RCB": {
+            "connections": [ "RM", "CB", "GK" ],
+            "position": "CB"
+        },
+        "GK": {
+            "connections": [ "RCB", "CB", "LCB" ]
+        }
+    },
+    "3421": {
+        "LF": {
+            "connections": [ "LM", "ST", "LCM" ]
+        },
+        "ST": {
+            "connections": [ "LF", "RF" ]
+        },
+        "RF": {
+            "connections": [ "ST", "RCM", "RM" ]
+        },
+        "LM": {
+            "connections": [ "LF", "LCM", "LCB" ]
+        },
+        "LCM": {
+            "connections": [ "LM", "LF", "RCM", "CB" ],
+            "position": "CM"
+        },
+        "RCM": {
+            "connections": [ "RM", "RF", "LCM", "CB" ],
+            "position": "CM"
+        },
+        "RM": {
+            "connections": [ "RF", "RCM", "RCB" ]
+        },
+        "LCB": {
+            "connections": [ "LM", "CB", "GK" ],
+            "position": "CB"
+        },
+        "CB": {
+            "connections": [ "LCB", "LCM", "RCM", "RCB", "GK" ]
+        },
+        "RCB": {
+            "connections": [ "RM", "CB", "GK" ],
+            "position": "CB"
+        },
+        "GK": {
+            "connections": [ "RCB", "CB", "LCB" ]
+        }
+    },
+    "343": {
+        "LW": {
+            "connections": [ "LM", "ST" ]
+        },
+        "ST": {
+            "connections": [ "LW", "RW", "LCM", "RCM" ]
+        },
+        "RW": {
+            "connections": [ "ST", "RM" ]
+        },
+        "LM": {
+            "connections": [ "LW", "LCM", "LCB" ]
+        },
+        "LCM": {
+            "connections": [ "LM", "ST", "RCM", "CB" ],
+            "position": "CM"
+        },
+        "RCM": {
+            "connections": [ "RM", "ST", "LCM", "CB" ],
+            "position": "CM"
+        },
+        "RM": {
+            "connections": [ "RW", "RCM", "RCB" ]
+        },
+        "LCB": {
+            "connections": [ "LM", "CB", "GK" ],
+            "position": "CB"
+        },
+        "CB": {
+            "connections": [ "LCB", "LCM", "RCM", "RCB", "GK" ]
+        },
+        "RCB": {
+            "connections": [ "RM", "CB", "GK" ],
+            "position": "CB"
+        },
+        "GK": {
+            "connections": [ "RCB", "CB", "LCB" ]
+        }
+    },
+    "352": {
+        "LST": {
+            "connections": [ "LM", "CAM", "RST" ],
+            "position": "ST"
+        },
+        "RST": {
+            "connections": [ "RM", "CAM", "LST" ],
+            "position": "ST"
+        },
+        "LM": {
+            "connections": [ "LST", "LCDM", "LCB" ]
+        },
+        "LCDM": {
+            "connections": [ "LM", "LCB", "CAM", "RCDM", "CB" ],
+            "position": "CDM"
+        },
+        "CAM": {
+            "connections": [ "LST", "LCDM", "RST", "RCDM" ]
+        },
+        "RCDM": {
+            "connections": [ "RM", "RCB", "CAM", "LCDM", "CB" ],
+            "position": "CDM"
+        },
+        "RM": {
+            "connections": [ "RST", "RCDM", "RCB" ]
+        },
+        "LCB": {
+            "connections": [ "LCDM", "LM", "CB", "GK" ],
+            "position": "CB"
+        },
+        "CB": {
+            "connections": [ "LCB", "LCDM", "RCDM", "RCB", "GK" ]
+        },
+        "RCB": {
+            "connections": [ "RCDM", "RM", "CB", "GK" ],
+            "position": "CB"
+        },
+        "GK": {
+            "connections": [ "RCB", "CB", "LCB" ]
+        }
+    },
+    "41212": {
+        "LST": {
+            "connections": [ "LM", "RST", "CAM" ],
+            "position": "ST"
+        },
+        "RST": {
+            "connections": [ "RM", "LST", "CAM" ],
+            "position": "ST"
+        },
+        "CAM": {
+            "connections": [ "RST", "LST", "LM", "RM", "CDM" ]
+        },
+        "LM": {
+            "connections": [ "LST", "CAM", "CDM", "LB" ]
+        },
+        "RM": {
+            "connections": [ "RST", "CAM", "CDM", "RB" ]
+        },
+        "CDM": {
+            "connections": [ "LM", "CAM", "RM", "LCB", "RCB" ]
+        },
+        "LB": {
+            "connections": [ "LM", "LCB" ]
+        },
+        "LCB": {
+            "connections": [ "LB", "RCB", "GK", "CDM" ],
+            "position": "CB"
+        },
+        "RCB": {
+            "connections": [ "RB", "LCB", "GK", "CDM" ],
+            "position": "CB"
+        },
+        "RB": {
+            "connections": [ "RM", "RCB" ]
+        },
+        "GK": {
+            "connections": [ "LCB", "RCB" ]
+        }
+    },
+    "41212-2": {
+        "LST": {
+            "connections": [ "LCM", "RST", "CAM" ],
+            "position": "ST"
+        },
+        "RST": {
+            "connections": [ "RCM", "LST", "CAM" ],
+            "position": "ST"
+        },
+        "CAM": {
+            "connections": [ "RST", "LST", "LCM", "RCM", "CDM" ]
+        },
+        "LCM": {
+            "connections": [ "LST", "CAM", "CDM", "LB" ]
+            "position": "CM"
+        },
+        "RCM": {
+            "connections": [ "RST", "CAM", "CDM", "RB" ]
+            "position": "CM"
+        },
+        "CDM": {
+            "connections": [ "LCM", "CAM", "RCM", "LCB", "RCB" ]
+        },
+        "LB": {
+            "connections": [ "LCM", "LCB" ]
+        },
+        "LCB": {
+            "connections": [ "LB", "RCB", "GK", "CDM" ],
+            "position": "CB"
+        },
+        "RCB": {
+            "connections": [ "RB", "LCB", "GK", "CDM" ],
+            "position": "CB"
+        },
+        "RB": {
+            "connections": [ "RCM", "RCB" ]
+        },
+        "GK": {
+            "connections": [ "LCB", "RCB" ]
+        }
+    },
+    "4141": {
+        "ST": {
+            "connections": [ "LM", "LCM", "RCM", "RM" ]
+        },
+        "LM": {
+            "connections": [ "ST", "LCM", "LB" ]
+        },
+        "LCM": {
+            "connections": [ "LM", "ST", "RCM", "LCB", "CDM" ],
+            "position": "CM"
+        },
+        "RCM": {
+            "connections": [ "RM", "ST", "LCM", "RCB", "CDM" ],
+            "position": "CM"
+        },
+        "RM": {
+            "connections": [ "ST", "RCM", "RB" ]
+        },
+        "CDM": {
+            "connections": [ "LCM", "RCM", "LCB", "RCB" ]
+        },
+        "LB": {
+            "connections": [ "LM", "LCB" ]
+        },
+        "LCB": {
+            "connections": [ "LB", "LCM", "CDM", "RCB", "GK" ],
+            "position": "CB"
+        },
+        "RCB": {
+            "connections": [ "RB", "RCM", "CDM", "LCB", "GK" ],
+            "position": "CB"
+        },
+        "RB": {
+            "connections": [ "RM", "RCB" ]
+        },
+        "GK": {
+            "connections": [ "LCB", "RCB" ]
+        }
+    },
+    "4231": {
+        "ST": {
+            "connections": [ "LCAM", "CAM", "RCAM" ]
+        },
+        "LCAM": {
+            "connections": [ "ST", "CAM", "LCDM" ],
+            "position": "CAM"
+        },
+        "CAM": {
+            "connections": [ "LCAM", "LCDM", "RCDM", "RCAM" ]
+        },
+        "RCAM": {
+            "connections": [ "ST", "CAM", "RCDM" ],
+            "position": "CAM"
+        },
+        "LCDM": {
+            "connections": [ "LCAM", "CAM", "LCB", "LB" ],
+            "position": "CDM"
+        },
+        "RCDM": {
+            "connections": [ "RCAM", "CAM", "RCB", "RB" ],
+            "position": "CDM"
+        },
+        "LB": {
+            "connections": [ "LCDM", "LCB" ]
+        },
+        "LCB": {
+            "connections": [ "LCDM", "LB", "RCB", "GK" ],
+            "position": "CB"
+        },
+        "RCB": {
+            "connections": [ "RCDM", "RB", "LCB", "GK" ],
+            "position": "CB"
+        },
+        "RB": {
+            "connections": [ "RCDM", "RCB" ]
+        },
+        "GK": {
+            "connections": [ "LCB", "RCB" ]
+        }
+    },
+    "4231-2": {
+        "ST": {
+            "connections": [ "LM", "CAM", "RM" ]
+        },
+        "LM": {
+            "connections": [ "ST", "CAM", "LCDM", "LB" ]
+        },
+        "CAM": {
+            "connections": [ "LM", "LCDM", "ST", "RCDM", "RM" ]
+        },
+        "RM": {
+            "connections": [ "ST", "CAM", "RCDM", "RB" ]
+        },
+        "LCDM": {
+            "connections": [ "LM", "CAM", "LCB", "LB" ],
+            "position": "CDM"
+        },
+        "RCDM": {
+            "connections": [ "RM", "CAM", "RCB", "RB" ],
+            "position": "CDM"
+        },
+        "LB": {
+            "connections": [ "LCDM", "LCB", "LM" ]
+        },
+        "LCB": {
+            "connections": [ "LCDM", "LB", "RCB", "GK" ],
+            "position": "CB"
+        },
+        "RCB": {
+            "connections": [ "RCDM", "RB", "LCB", "GK" ],
+            "position": "CB"
+        },
+        "RB": {
+            "connections": [ "RCDM", "RCB", "RM" ]
+        },
+        "GK": {
+            "connections": [ "LCB", "RCB" ]
+        }
+    },
+    "4222": { 
+        
+    }
+}
